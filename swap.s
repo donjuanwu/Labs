@@ -14,24 +14,24 @@ main:
 	li	a1, 4
 	jal	swap
 	
-	li	a7, 4		#system call for printing a string
-	la	a0, str1
+	li	a0, 4		#system call for printing a string
+	la	a1, str1
 	ecall
 
-	li	a7, 1		#system call for printing an integer in ASCII
-	lw	a0, 0(t1)
+	li	a0, 1		#system call for printing an integer in ASCII
+	lw	a1, 0(t1)
 	ecall
 
-	li	a7, 4		#system call for printing a string
-	la	a0, str2
+	li	a0, 4		#system call for printing a string
+	la	a1, str2
 	ecall
 	
-	li	a7, 1		#system call for printing an integer in ASCII
-	lw	a0, 4(t1)
+	li	a0, 1		#system call for printing an integer in ASCII
+	lw	a1, 4(t1)
 	ecall
 	
-	li	a7, 11		#system call for printing a character in ASCII
-	li	a0, 10
+	li	a0, 11		#system call for printing a character in ASCII
+	li	a1, 10
 	ecall
 	
 	li	a7, 10		#system call for an exit
@@ -40,17 +40,17 @@ main:
 
 swap:	
 	slli	t1, a1, 2	#reg t1=k*4
-	add		t1, a0, t1	#reg t1=address of zing[k]
+	add	t1, a0, t1	#reg t1=address of zing[k]
 				
-	lw		t0, 0(t1)	#reg t0=zing[k]
-	lw		t2, 4(t1)	#reg t2=zing[k+1]
+	lw	t0, 0(t1)	#reg t0=zing[k]
+	lw	t2, 4(t1)	#reg t2=zing[k+1]
 				
-	sw		t2, 0(t1)	
-	sw		t0, 4(t1)
+	sw	t2, 0(t1)	
+	sw	t0, 4(t1)
 	
-	addi            t4, zero, 5    # 4/11/18: added from lab 1 RARS instruction 14	
-	addi            t5, t4, 2      # add t4 + 2 and assign 7 to t5
-	addi            t6, t5, 5      # add t5 + 5 and assign 12 to t6
+	addi    t4, zero, 5    # 4/11/18: added from lab 1 RARS instruction 14	
+	addi    t5, t4, 2      # add t4 + 2 and assign 7 to t5
+	addi    t6, t5, 5      # add t5 + 5 and assign 12 to t6
 	ret		
 
 # END OF PROGRAM
