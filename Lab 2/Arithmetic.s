@@ -1,17 +1,25 @@
-#Name: Don Dang
-#File: Arithmetic.s
-#Date: 4/25/18
-# ARITHMETIC
-# Write a complete RISC - V assembly program that calculates the equation shown below (in C)
-# A-F can be stored in temporary registers. However, the final result Z must be an integer word
-#     stored in memory when your program finishes executing.
+#Name         : Don Dang
+#Filename     : Arithmetic.s
+#Date        : 4/25/18
+#Class      : Microprocess Designs
+#Instructor: Ken Rabold
+#Project   : Lab2 - Part1
+#Reference: Comp. org & Designs. 
+#
+#Purpose : Translate C syntax of working with addition/subtraction/multiplication/division to ASM
 
-	.data		# Data declaration section
-	Z: .word 0      # Declare a label called Z with word datatype 
+#Date		Developer	Activities
+#4/25/18  	DD		Complete rest of Lab2 part 1.		   
+#
 
-	.text
 
-main:			# Start of code section
+.data		# Data declaration section
+Z: .word 0      # Declare a label called Z with word datatype 
+
+completion: .asciz "Yay. Lab 2 part 1 is now completed"
+.text           # Start Program
+
+main:		
 	
 	li t0, 15	# Load immediately the following constants into temporary registers. 
 	li t1, 10	
@@ -30,5 +38,14 @@ main:			# Start of code section
 	add t2, t0, t1 #Add t0 and t1 and store the result in t2
 	
 	sw t2, Z, t4  #Save the value of t2 back to Z. But this saving the value of t2 into Z label requires an addintial temp register .i.e. 
+	
+	
+	li a7, 4         	#Set up print string syscall
+	la a0, completion   	#Load good bye into temp
+	ecall            	#Tell the OS to do the syscall
+
+
+	li a7, 10        	#Set up exit syscall
+	ecall            	#Tell the OS to do the syscall
 	
 # END OF ARITHMETIC
