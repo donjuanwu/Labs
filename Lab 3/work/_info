@@ -1,0 +1,358 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dP:/WEB/Spring 2018/Microprocessor Designs/Lab3
+T_opt
+!s110 1525314200
+V0gzE:E;@F0iY1imQoo_n^1
+Z1 04 10 9 work register32 biggermem 1
+Z2 04 11 8 work testreg_vhd behavior 1
+=1-4437e6bbb0bf-5aea7297-226-3b38
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;10.5e;63
+R0
+T_opt1
+!s110 1525314513
+VjP1P<`]]13?U>Y5IB43iB1
+R1
+04 9 5 work register8 memmy 1
+04 14 7 work shift_register shifter 1
+R2
+=1-4437e6bbb0bf-5aea73d0-247-1050
+R3
+R4
+n@_opt1
+R5
+T_opt2
+!s110 1525314411
+VmEojWZ9YXIHKe;TjZmM]?0
+R1
+=1-4437e6bbb0bf-5aea736a-31c-13e0
+R3
+R4
+n@_opt2
+R5
+R0
+Eadder_subtracter
+Z6 w1525313688
+Z7 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z8 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z9 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z12 dP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3
+Z13 8P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd
+Z14 FP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd
+l0
+L161
+V:BzGRjY4?RA97zNUSfV@Z1
+!s100 Wm<>dE8P_Cm53hn4[nGER1
+Z15 OL;C;10.5e;63
+32
+Z16 !s110 1525313891
+!i10b 1
+Z17 !s108 1525313891.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd|
+Z19 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd|
+!i113 0
+Z20 o-work work -2002 -explicit
+Z21 tExplicit 1 CvgOpt 0
+Acalc
+R7
+R8
+R9
+R10
+R11
+DEx4 work 16 adder_subtracter 0 22 :BzGRjY4?RA97zNUSfV@Z1
+l171
+L169
+VCV:U1XgT2Ge7^8;m>o0iC0
+!s100 hNlmQo1K7cY0HmN32AGba3
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Ebitstorage
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+l0
+L25
+VCi3kRZc_g2FMYzEQ66cOZ0
+!s100 IAE[__aB4SjdIoYl4n:ZC0
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Amemlike
+R7
+R8
+R9
+R10
+R11
+DEx4 work 10 bitstorage 0 22 Ci3kRZc_g2FMYzEQ66cOZ0
+l34
+L32
+VYz1WcZ>=090Bgod4;Q5381
+!s100 [c=PT0RMo]j^NMiNQdY2e2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Efulladder
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+l0
+L52
+V=Md0=Ezh]@1mcTlNYz04J0
+!s100 BjX9df=Li<Y9DL;n@onij3
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Aaddlike
+R7
+R8
+R9
+R10
+R11
+DEx4 work 9 fulladder 0 22 =Md0=Ezh]@1mcTlNYz04J0
+l62
+L61
+Vb]Id>[Ml[WPQSJX41I5261
+!s100 `L49>e<H`2>S>1Mc9@h]H0
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Eregister32
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+l0
+L118
+Vj>kTQHNA14iNG514<DSXG0
+!s100 o@]Wj_D^Kb>[4f3@KIgE`2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Abiggermem
+R7
+R8
+R9
+R10
+R11
+DEx4 work 10 register32 0 22 j>kTQHNA14iNG514<DSXG0
+l136
+L125
+VDY]MFo>6CCiGP:lYY0Y<U0
+!s100 2JKdel5z5XV0_fj::QH=H0
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Eregister8
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+l0
+L74
+V^bcXc9M^C5ETF4j>n3?Y81
+!s100 HRH3QYd5Omf0PEhfAEA8a2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Amemmy
+R7
+R8
+R9
+R10
+R11
+DEx4 work 9 register8 0 22 ^bcXc9M^C5ETF4j>n3?Y81
+l92
+L82
+VY_5IJD;FPWI7`BD[a4i_k2
+!s100 @ma3LZR4L:F<Yc>ail?3D2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Eshift_register
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+l0
+L181
+VR?Xa=9l;eB8UI0TJ;]Qa83
+!s100 ;UX9dL3N>AhhzfMhf@b=z0
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Ashifter
+R7
+R8
+R9
+R10
+R11
+DEx4 work 14 shift_register 0 22 R?Xa=9l;eB8UI0TJ;]Qa83
+l190
+L188
+V_Wi4;J0d1Vm_Q]@7dUIbI2
+!s100 B8cTj^5TR^O<eLl`eX2k@2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Etestreg_vhd
+Z22 w1525131744
+R9
+R7
+R8
+R10
+R11
+R12
+Z23 8P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/tregisterswclues.vhd
+Z24 FP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/tregisterswclues.vhd
+l0
+L12
+ViXoQXl2a;kM[chQ:j@fB?1
+!s100 [FQ?dzLOmOKmXoOC5VXHN0
+R15
+32
+R16
+!i10b 1
+R17
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/tregisterswclues.vhd|
+Z26 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/tregisterswclues.vhd|
+!i113 0
+R20
+R21
+Abehavior
+R9
+R7
+R8
+R10
+R11
+DEx4 work 11 testreg_vhd 0 22 iXoQXl2a;kM[chQ:j@fB?1
+l59
+L15
+VkbOe39?Vb]5;FNY]5>AO41
+!s100 zdoKYizBG:HDl<[>DIJn_0
+R15
+32
+!s110 1525313892
+!i10b 1
+R17
+R25
+R26
+!i113 0
+R20
+R21

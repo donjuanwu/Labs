@@ -15,8 +15,7 @@
 -- Developer	Date		Activities
 -- DD		4/30/18 	Modify Register.vhd
 --				Complete step 1: An 8 bit register called register8 from components of the memory cell in register.vhd
---        		 	Attempt to work on step 2. A 32 bit register called register 32 built from components of register8
--- KK		5/2/18		Add compenent to register32
+--				Attempt to work on step 2. A 32 bit register called register 32 built from components of register8
 --
 Library ieee;
 Use ieee.std_logic_1164.all;
