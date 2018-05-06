@@ -15,7 +15,8 @@
 -- Developer	Date		Activities
 -- DD		4/30/18 	Modify Register.vhd
 --				Complete step 1: An 8 bit register called register8 from components of the memory cell in register.vhd
---				Attempt to work on step 2. A 32 bit register called register 32 built from components of register8
+--        		 	Attempt to work on step 2. A 32 bit register called register 32 built from components of register8
+-- KK		5/2/18		Add compenent to register32
 --
 Library ieee;
 Use ieee.std_logic_1164.all;
@@ -44,6 +45,7 @@ begin
 end architecture memlike;
 
 --------------------------------------------------------------------------------
+--This is the FullAdder
 Library ieee;
 Use ieee.std_logic_1164.all;
 Use ieee.numeric_std.all;
@@ -168,9 +170,36 @@ end entity adder_subtracter;
 
 architecture calc of adder_subtracter is
 
+
+
+	COMPONENT FULLADDER IS    	-- FullAdder Component Declaration
+		port (a : in std_logic;
+          	      b : in std_logic;
+          	      cin : in std_logic;
+          	      sum : out std_logic;
+          	      carry : out std_logic);
+	END COMPONENT;
+			 
+SIGNAL c: STD_LOGIC_VECTOR (32 downto 0);
+SIGNAL SUB: STD_LOGIC_VECTOR(31 DOWNTO 0);
+
 begin
-	-- insert code here.
-end architecture calc;
+		WITH add_sub SELECT 
+			SUB <= NOT (datain_b) when '1',
+				 datain_b when others;
+	
+		c(0)  <= add_sub;
+		co <= c(32);
+---------------------------GENERATE--------------------------------		
+		FullAdder4: FOR i IN 0 TO 31 GENERATE
+		FAi: FullAdder PORT MAP (datain_a(i), datain_b(i),SUB(i),dataout(i), c(i + 1));
+		
+		END GENERATE; 
+
+
+end calc;
+
+
 
 --------------------------------------------------------------------------------
 Library ieee;
@@ -179,17 +208,26 @@ Use ieee.numeric_std.all;
 Use ieee.std_logic_unsigned.all;
 
 entity shift_register is
-	port(	datain: in std_logic_vector(31 downto 0);
-	   	dir: in std_logic;
-		shamt:	in std_logic_vector(4 downto 0);
+	port( datain: in std_logic_vector(31 downto 0);
+    		dir: in std_logic;
+		shamt: in std_logic_vector(4 downto 0);
 		dataout: out std_logic_vector(31 downto 0));
-end entity shift_register;
+	end entity shift_register;
 
 architecture shifter of shift_register is
-	
 begin
-	-- insert code here.
+
+	with dir & shamt select
+		dataout <= datain(30 downto 0) & "0" when "000001",         --shifting right by 1 when direction and shamt (shift amount) =  1
+				datain(29 downto 0) & "00" when "000010", 
+				datain(28 downto 0) & "000" when "000011", 
+				"0" & datain(31 downto 1) when "100001",    --shifting left by 1 when direction and shamt = 
+				"00" & datain(31 downto 2) when "100010", 
+				"000" & datain(31 downto 3) when "100011",
+				datain(31 downto 0) when others; 
+
 end architecture shifter;
+
 
  
 
