@@ -188,11 +188,11 @@ begin
 			SUB <= NOT (datain_b) when '1',
 				 datain_b when others;
 	
-		c(0)  <= add_sub;
+		c(0)  <= SUB;
 		co <= c(32);
 ---------------------------GENERATE--------------------------------		
 		FullAdder4: FOR i IN 0 TO 31 GENERATE
-		FAi: FullAdder PORT MAP (datain_a(i), datain_b(i),SUB(i),dataout(i), c(i + 1));
+		FAi: FullAdder PORT MAP (datain_a(i),SUB(i),c(i), dataout(i), c(i + 1));
 		
 		END GENERATE; 
 
