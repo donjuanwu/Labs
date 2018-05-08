@@ -9,15 +9,14 @@ z2
 cModel Technology
 Z0 dP:/WEB/Spring 2018/Microprocessor Designs/Lab3
 T_opt
-!s110 1525491381
-VDlmUGc^V=Z95lhQn49bjk3
+!s110 1525737443
+VPUm`E2L8;VX84:kELjjkh0
 Z1 04 11 8 work testreg_vhd behavior 1
-=1-4437e6bbb0bf-5aed26b3-2d2-23c0
+=1-4437e6bbb0bf-5af0e7e0-3e4-698
 Z2 o-quiet -auto_acc_if_foreign -work work +acc
 Z3 tCvgOpt 0
 n@_opt
 Z4 OL;O;10.5e;63
-R0
 T_opt1
 !s110 1525314513
 VjP1P<`]]13?U>Y5IB43iB1
@@ -40,27 +39,28 @@ o-quiet -auto_acc_if_foreign -work work
 R3
 n@_opt2
 R4
+R0
 Eadder_subtracter
-Z5 w1525492245
+Z5 w1525737416
 Z6 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z7 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z8 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z10 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z11 dP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3
-Z12 8P:\WEB\Spring 2018\Microprocessor Designs\GitHub\Labs\Labs\Lab 3\registers.vhd
-Z13 FP:\WEB\Spring 2018\Microprocessor Designs\GitHub\Labs\Labs\Lab 3\registers.vhd
+Z12 8P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd
+Z13 FP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd
 l0
 L163
 V@El@nSSVCM23e;mhNS>JD1
 !s100 ^5mLegmP@MDnBQHBMCebo0
 Z14 OL;C;10.5e;63
 32
-Z15 !s110 1525655997
+Z15 !s110 1525737418
 !i10b 1
-Z16 !s108 1525655996.000000
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:\WEB\Spring 2018\Microprocessor Designs\GitHub\Labs\Labs\Lab 3\registers.vhd|
-Z18 !s107 P:\WEB\Spring 2018\Microprocessor Designs\GitHub\Labs\Labs\Lab 3\registers.vhd|
+Z16 !s108 1525737418.000000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd|
+Z18 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/registers.vhd|
 !i113 0
 Z19 o-work work -2002 -explicit
 Z20 tExplicit 1 CvgOpt 0
@@ -71,10 +71,10 @@ R8
 R9
 R10
 DEx4 work 16 adder_subtracter 0 22 @El@nSSVCM23e;mhNS>JD1
-l186
+l185
 L171
-VZnKT>Zh]e4JYH773Tk`591
-!s100 2`[m;3<:G^Ge[XDXoF>kJ0
+VRk9C3097=jnh8b`_JXSTZ3
+!s100 3Kc4DWX_MjdbGQ[E3MAEC0
 R14
 32
 R15
@@ -276,9 +276,9 @@ R11
 R12
 R13
 l0
-L210
-VkhWz5K3LzIVP<HQYK6X@T2
-!s100 Eh;ZXz`mcHk`@AX88DD6O2
+L211
+VKkiIGd9eARYO_Mj_4A9O23
+!s100 iU;9WmFTe6aU7k5oKnYH@2
 R14
 32
 R15
@@ -295,11 +295,11 @@ R7
 R8
 R9
 R10
-DEx4 work 14 shift_register 0 22 khWz5K3LzIVP<HQYK6X@T2
-l218
-L217
-VG9RUnVVgN5LK8iU`jPLNZ2
-!s100 ^na@]28foR5DCn7NTBU9L2
+DEx4 work 14 shift_register 0 22 KkiIGd9eARYO_Mj_4A9O23
+l219
+L218
+VhS]l[fih;212glh?kOXz^2
+!s100 a?3eZ2_SoR8>iO1=K<aJ50
 R14
 32
 R15
@@ -326,9 +326,9 @@ ViXoQXl2a;kM[chQ:j@fB?1
 !s100 [FQ?dzLOmOKmXoOC5VXHN0
 R14
 32
-R15
+Z24 !s110 1525737419
 !i10b 1
-Z24 !s108 1525655997.000000
+R16
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/tregisterswclues.vhd|
 Z26 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 3/tregisterswclues.vhd|
 !i113 0
@@ -347,9 +347,9 @@ VkbOe39?Vb]5;FNY]5>AO41
 !s100 zdoKYizBG:HDl<[>DIJn_0
 R14
 32
-R15
-!i10b 1
 R24
+!i10b 1
+R16
 R25
 R26
 !i113 0

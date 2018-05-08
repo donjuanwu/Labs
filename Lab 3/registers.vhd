@@ -170,9 +170,8 @@ end entity adder_subtracter;
 
 architecture calc of adder_subtracter is
 
-
-
-	COMPONENT FULLADDER IS    	-- FullAdder Component Declaration
+			 
+COMPONENT FULLADDER IS   -- FullAdder Component Declaration
 		port (a : in std_logic;
           	      b : in std_logic;
           	      cin : in std_logic;
@@ -180,21 +179,23 @@ architecture calc of adder_subtracter is
           	      carry : out std_logic);
 	END COMPONENT;
 			 
-SIGNAL c: STD_LOGIC_VECTOR (32 downto 0);
-SIGNAL SUB: STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL cOut: STD_LOGIC_VECTOR (31 downto 0);
+SIGNAL subB: STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 begin
-		WITH add_sub SELECT 
-			SUB <= NOT (datain_b) when '1',
-				 datain_b when others;
-	
-		c(0)  <= SUB;
-		co <= c(32);
----------------------------GENERATE--------------------------------		
-		FullAdder4: FOR i IN 0 TO 31 GENERATE
-		FAi: FullAdder PORT MAP (datain_a(i),SUB(i),c(i), dataout(i), c(i + 1));
-		
-		END GENERATE; 
+      with add_sub select
+	   subB <= NOT datain_b when '1',
+			datain_b when '0',
+			"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" when others;
+
+---------------------------GENERATE--------------------------------
+	 FA0: FullAdder PORT MAP(datain_a(0),subB(0), add_sub, dataout(0), cOut(0));
+F1:	 for i IN 1 TO 31 GENERATE
+            FAi: FullAdder 
+               PORT MAP (datain_a(i), subB(i),cOut(i-1),dataout(i), cOut(i));
+            END GENERATE; 
+            
+co<=cOut(31);
 
 
 end calc;
