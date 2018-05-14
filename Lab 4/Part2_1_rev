@@ -1,0 +1,74 @@
+# Part2: Converting Fahrenheit to Celsius to Kelvin
+
+	.data	# Data declaration section
+
+input:	.asciz "Fahrenheit value: "
+cels:	.asciz "Tempurature in Celsius: "
+kelv:	.asciz "Tempurature in Kelvin: "
+
+Val32:	.float 32.0
+ValK:	.float 273.15
+Val5:	.float 5.0 
+Val9:	.float 9.0 
+
+msgCels:	.asciz "Printing temperature, Celsius" 
+msgKelv:	.asciz "Printing temperature, Kelvin" 
+	.text
+
+main:	# Start of code section
+	
+	li t0,4
+	flw fa4, input, s0   	# Read Input
+	ecall
+	
+	li t0, 6 		# read input
+	ecall 
+	sw t1, 0(x1) 		# Store Fahrenheit input
+	
+	###############################Start Converting######################
+	j converter
+	
+	#################################Celsius Value###################
+	
+	li t0, 4      #System call for print string   
+	la a6, cels  	
+	ecall
+	
+	fmv.s fa3, fa3
+	li a7, 4     #System call for print string
+	la a0, msgCels
+	ecall
+	
+	
+	##############################kelvin value#########################
+	li t0, 4    #System call for print string
+	la a6, msgKelv	
+	ecall
+	
+	fmv.s fa4, fa4     #save kevin .i.e. cel + 273.15
+	li t0,4 	
+	ecall
+
+	li a7, 10	#########Exit Program
+	ecall
+	
+	################################Converter###############################	
+converter:
+	flw ft2, Val5, x0 # t2 = 5.0
+	flw ft3, Val9, x0 # t3 = 9.0 	
+	flw ft4, Val32, x0  # t4 = 32.0 	
+	flw ft5, ValK, x0 # t5 = 273.15 	
+	
+	######################convert to celsius#################################
+
+	fdiv.s fa1, ft2, ft3	# = 5/9
+	fsub.s fa2, fa5, ft4	# = fahr - 32
+	fmul.s fa3, fa1, fa2 	# = (5.0/9.0)*(fahr - 32.0)
+	
+	#########################convert to kelvin##############################
+
+	fadd.s fa4, fa6, ft5	# = cels + 273.15
+	
+	ret		#return 
+
+# END OF PROGRAM

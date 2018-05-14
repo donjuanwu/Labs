@@ -12,7 +12,7 @@
 			
 -- Developer	Date		Activities
 -- DD		5/10/18 	Modify ALU.vhd
--- KK		5/12/18		Inserted missing codes for ALU.vhd
+-- KK				Inserted missing codes for ALU.vhd
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
