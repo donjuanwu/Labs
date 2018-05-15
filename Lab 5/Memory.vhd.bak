@@ -82,10 +82,10 @@ end entity Registers;
 
 architecture remember of Registers is
 	component register32
-  	    port(datain: in std_logic_vector(31 downto 0);      -- 
-		 enout32,enout16,enout8: in std_logic;          -- 
-		 writein32, writein16, writein8: in std_logic;  -- 
-		 dataout: out std_logic_vector(31 downto 0));   -- 
+  	    port(datain: in std_logic_vector(31 downto 0);      
+		 enout32,enout16,enout8: in std_logic;
+		 writein32, writein16, writein8: in std_logic;
+		 dataout: out std_logic_vector(31 downto 0));
 	end component;
 	
 begin
