@@ -1,4 +1,17 @@
-{P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd}
+{P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd}
+QuestaSim-64 vcom 10.5e Compiler 2017.06 Jun 16 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity RAM
+-- Compiling architecture staticRAM of RAM
+-- Compiling entity Registers
+-- Compiling architecture remember of Registers
+
+} {} {}} {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd}
 QuestaSim-64 vcom 10.5e Compiler 2017.06 Jun 16 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO

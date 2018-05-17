@@ -37,6 +37,8 @@ architecture staticRAM of RAM is
 
    type ram_type is array (0 to 127) of std_logic_vector(31 downto 0);
    signal i_ram : ram_type;
+  -- signal addInt: integer RANGE 0 to 127;
+   SIGNAL highz: STD_LOGIC_VECTOR(31 DOWNTO 0) := "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
 
 begin
 
@@ -49,13 +51,30 @@ begin
       end loop;
     end if;
 
-    if falling_edge(Clock) then
+    IF falling_edge(Clock) THEN
 	-- Add code to write data to RAM
-	-- Use to_integer(unsigned(Address)) to index the i_ram array
-	
-    end if;
+	IF (WE = '1') THEN -- ONLY write data to i_ram on falling edge and write enable = 1.	
+		IF (to_integer(unsigned(Address)) <= 127) THEN
+			i_ram (to_integer(unsigned(Address))) <= DataIn;
+		END IF;
+	END IF;
 
-	-- Rest of the RAM implementation
+    END IF;
+    
+    
+    IF (OE='0' AND (to_integer(unsigned(Address)) <=127)) THEN
+	DataOut <=  i_ram (to_integer(unsigned(Address)));
+    ELSE
+	Dataout <= highz;
+	--DataOut(31 DOWNTO 0) <= 'Z';
+      --  DataOut := X"ZZZZZZZZ";
+    END IF;
+
+
+
+	-- DMEM Section
+	
+	
 
   end process RamProc;
 
@@ -90,6 +109,8 @@ architecture remember of Registers is
 	
 begin
     -- Add your code here for the Register Bank implementation
+
+	
 
 end remember;
 
