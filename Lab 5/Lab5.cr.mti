@@ -1,4 +1,4 @@
-{P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd}
+{P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd} {0 {vcom -work work -2002 -explicit -vopt -stats=none {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd}
 QuestaSim-64 vcom 10.5e Compiler 2017.06 Jun 16 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -10,8 +10,26 @@ QuestaSim-64 vcom 10.5e Compiler 2017.06 Jun 16 2017
 -- Compiling architecture staticRAM of RAM
 -- Compiling entity Registers
 -- Compiling architecture remember of Registers
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(186): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(187): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(187): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(188): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(188): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(189): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(189): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(190): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(190): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(191): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(191): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(192): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(192): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(193): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(193): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(194): Statement cannot be labeled.
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(194): near "'": syntax error
+** Error: P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd(197): VHDL Compiler exiting
 
-} {} {}} {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd}
+} {13.0 31.0} {}} {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd}
 QuestaSim-64 vcom 10.5e Compiler 2017.06 Jun 16 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO

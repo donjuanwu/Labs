@@ -7,148 +7,293 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 4
+Z0 dP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 4
 T_opt
 !s110 1526519930
 VcUmIF07P=L2Cfjl5hndMm2
-04 11 8 work tmemory_vhd behavior 1
+Z1 04 11 8 work tmemory_vhd behavior 1
 =1-4437e6bbb0bf-5afcd878-167-179c
 o-quiet -auto_acc_if_foreign -work work +acc
-tCvgOpt 0
+Z2 tCvgOpt 0
 n@_opt
-OL;O;10.5e;63
-Eram
-Z0 w1526519865
-Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 dP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5
-Z7 8P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd
-Z8 FP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd
-l0
-L26
-V4W6438gl=V3`VN4Jm?;PH1
-!s100 BGbhdn@g=M:YeJDeVOdCP3
-Z9 OL;C;10.5e;63
-32
-Z10 !s110 1526519914
-!i10b 1
-Z11 !s108 1526519914.000000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd|
-Z13 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd|
-!i113 0
-Z14 o-work work -2002 -explicit
-Z15 tExplicit 1 CvgOpt 0
-Astaticram
-R1
-R2
-R3
-R4
-R5
-DEx4 work 3 ram 0 22 4W6438gl=V3`VN4Jm?;PH1
-l43
-L36
-VS83_DLN8JDo;i:zE<cA8o2
-!s100 _AF6od`0z]::VNOQPQYon3
-R9
-32
-R10
-!i10b 1
-R11
-R12
-R13
-!i113 0
-R14
-R15
-Eregisters
+Z3 OL;O;10.5e;63
 R0
+T_opt1
+!s110 1526944851
+VNIE>W8jQjPD02e>0h^Ezm2
 R1
+=1-4437e6bbb0bf-5b035451-151-3b9c
+o-quiet -auto_acc_if_foreign -work work
 R2
+n@_opt1
 R3
+Ebitstorage
+Z4 w1526944813
+Z5 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z7 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 dP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5
+Z11 8P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd
+Z12 FP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd
+l0
+L208
+V58NUoH]nfEA;@;4z@:bNI2
+!s100 :d6;CJ^_O`8cM5glRzm6h3
+Z13 OL;C;10.5e;63
+32
+Z14 !s110 1526944831
+!i10b 1
+Z15 !s108 1526944831.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd|
+Z17 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/Memory.vhd|
+!i113 0
+Z18 o-work work -2002 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Amemlike
+R5
+R6
+R7
+R8
+R9
+DEx4 work 10 bitstorage 0 22 58NUoH]nfEA;@;4z@:bNI2
+l217
+L215
+VFR?aI:;0lNJUUGc08kZ3g0
+!s100 8ViGVa:3SKj8njXd`zeCU0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Eram
 R4
 R5
 R6
 R7
 R8
+R9
+R10
+R11
+R12
 l0
-L90
-Vf^<WICmjZ`UiPTDg4E`GD3
-!s100 O=J:GYmmbInW=8ZUf>=DI0
-R9
-32
-R10
-!i10b 1
-R11
-R12
+L29
+VdS2_?z`;YzNFBBbT?VATG0
+!s100 ckV@H_H?n^;Zi3YZhlInF0
 R13
-!i113 0
+32
 R14
+!i10b 1
 R15
-Aremember
-R1
-R2
-R3
-R4
+R16
+R17
+!i113 0
+R18
+R19
+Astaticram
 R5
-DEx4 work 9 registers 0 22 f^<WICmjZ`UiPTDg4E`GD3
-l110
-L102
-V19zALoo2ckUczb@DK0bJ72
-!s100 b28Bl:@mHToW1A5mC8:I;0
+R6
+R7
+R8
 R9
-32
-R10
-!i10b 1
-R11
-R12
+DEx4 work 3 ram 0 22 dS2_?z`;YzNFBBbT?VATG0
+l46
+L39
+Ve8Anz[jg2GkI>cGa`WkDo2
+!s100 N0jB;5B:o5oY9X]cZ5LB11
 R13
-!i113 0
+32
 R14
+!i10b 1
 R15
-Etmemory_vhd
-Z16 w1526519910
-R1
-R2
-R3
+R16
+R17
+!i113 0
+R18
+R19
+Eregister32
 R4
 R5
 R6
-Z17 8P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd
-Z18 FP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd
-l0
-L11
-Vif5Y=^]Ec:KR3FkV4F[JZ3
-!s100 To_T8cL8kc>aMze>51Jo]3
+R7
+R8
 R9
-32
 R10
-!i10b 1
 R11
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd|
-Z20 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd|
-!i113 0
+R12
+l0
+L291
+VX;Djc>8FR?g6Ohe=KKV2f3
+!s100 ;RgWfM2?ej3cl9R;L=7Rj0
+R13
+32
 R14
+!i10b 1
 R15
-Abehavior
-R1
-R2
-R3
+R16
+R17
+!i113 0
+R18
+R19
+Abiggermem
+R5
+R6
+R7
+R8
+R9
+DEx4 work 10 register32 0 22 X;Djc>8FR?g6Ohe=KKV2f3
+l309
+L298
+VVO51>XgY[nLVcm7YSXGgP3
+!s100 BcK?Wb;leB>N84[LN3?Uk1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Eregister8
 R4
 R5
-DEx4 work 11 tmemory_vhd 0 22 if5Y=^]Ec:KR3FkV4F[JZ3
-l55
-L14
-Vb@?2dJSV6fo:KR>kk4ZUO0
-!s100 zfOOHh4Ln8VTU5Lj_V0:73
+R6
+R7
+R8
 R9
-32
 R10
-!i10b 1
 R11
-R19
-R20
-!i113 0
+R12
+l0
+L242
+V86JlHl;CaE3>;=IzchkAJ1
+!s100 k3_>XPC>J;:PDL_AH<AV^2
+R13
+32
 R14
+!i10b 1
 R15
+R16
+R17
+!i113 0
+R18
+R19
+Amemmy
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 register8 0 22 86JlHl;CaE3>;=IzchkAJ1
+l259
+L250
+V:`?fc57l:V69=UJoc`5]F3
+!s100 Y?:2TB=YQjZz9UN>bNF1_3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Eregisters
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+l0
+L93
+VCAJUg6eSzadNk3EjjcbN]3
+!s100 Y@^V73>H6kDTE5]ZKQhml0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Aremember
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 registers 0 22 CAJUg6eSzadNk3EjjcbN]3
+l137
+L103
+VF`dN_bKSo0i=WCo]n:?6@1
+!s100 c=KK^?<L96^I>30Q2h_m91
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Etmemory_vhd
+Z20 w1526944599
+R5
+R6
+R7
+R8
+R9
+R10
+Z21 8P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd
+Z22 FP:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd
+l0
+L28
+VJTDD0KBC;M=ZBnj57gd621
+!s100 e4]@DcXZ_^og^gSYYOJ390
+R13
+32
+Z23 !s110 1526944832
+!i10b 1
+Z24 !s108 1526944832.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd|
+Z26 !s107 P:/WEB/Spring 2018/Microprocessor Designs/GitHub/Labs/Labs/Lab 5/tMemory.vhd|
+!i113 0
+R18
+R19
+Abehavior
+R5
+R6
+R7
+R8
+R9
+DEx4 work 11 tmemory_vhd 0 22 JTDD0KBC;M=ZBnj57gd621
+l72
+L31
+V;Sf^EhX<QK9NTnZh;T<J^2
+!s100 [HAK:I<fzn?>KAJDLc9J10
+R13
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R18
+R19

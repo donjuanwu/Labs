@@ -89,7 +89,7 @@ BEGIN
 
 		oe  <= '0';
 
---Start of test		
+--Start of test. Will skip this block of data because the conditions are not met. 	
 		address <= X"00000000";
 		dataIn  <= X"11111111";
 		we      <= '1';
