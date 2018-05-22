@@ -137,7 +137,7 @@ architecture remember of Registers is
 	begin
 	
 	---DEMUX FOR CHOOSING REGISTER TO WRITE---
-	zeri <= zer      when WriteCmd&writereg="100000";
+	zeri <= zer;      --when WriteCmd&writereg="100000";
 	a0i <= writeData when WriteCmd&writereg="100001";
 	a1i <= writeData when WriteCmd&writereg="100010";
 	a2i <= writeData when WriteCmd&writereg="100011";
